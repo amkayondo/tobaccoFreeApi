@@ -1,0 +1,38 @@
+{
+  "name": "tobaccofreeapi",
+  "version": "1.0.0",
+  "description": "Free the community from tobacco usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "start": "cross-env NODE_ENV=production node --require @babel/register ./dist/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amkayondo/tobaccoFreeApi.git"
+  },
+  "keywords": [
+    "tobacco",
+    "Free"
+  ],
+  "author": "amkayondo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amkayondo/tobaccoFreeApi/issues"
+  },
+  "homepage": "https://github.com/amkayondo/tobaccoFreeApi#readme",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7"
+  }
+}
