@@ -1,13 +1,8 @@
 {
-  "name": "tobaccofreeapi",
+  "name": "tobaccoFreeApi",
   "version": "1.0.0",
   "description": "Free the community from tobacco usage",
-  "main": "index.js",
-  "engines": {
-    "node": "^12.16.1",
-    "yarn": "^1",
-    "npm": "^6"
-  },
+  "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist",
@@ -23,12 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/amkayondo/tobaccoFreeApi.git"
   },
-  "keywords": [
-    "tobacco",
-    "Free"
-  ],
-  "author": "amkayondo",
-  "license": "MIT",
+  "keywords": [],
+  "author": "kayondo edward",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/amkayondo/tobaccoFreeApi/issues"
   },
