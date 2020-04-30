@@ -5,14 +5,14 @@
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist",
+    "build": "babel ./server -d dist",
     "start": "cross-env NODE_ENV=production node --require @babel/register ./dist/index.js",
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node server/index.js",
     "mg": "sequelize db:migrate",
     "mkmg": "sequelize migration:generate --name",
     "mkmd": "sequelize model:generate --name",
     "mku": "sequelize db:migrate:undo",
-    "prod": "yarn mg && yarn start"
+    "prod": "cd ./dist && yarn mg && yarn start"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "pg": "^8.0.3",
     "sequelize": "^5.21.7",
     "uuid": "^7.0.3"
   },
