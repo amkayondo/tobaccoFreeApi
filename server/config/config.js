@@ -22,7 +22,7 @@ module.exports = {
     password: process.env.PROD_PASSWORD,
     database: process.env.PROD_DATABASE,
     host: process.env.PROD_HOST,
-    dialect: process.PROD_DIALECT,
+    dialect: process.env.PROD_DIALECT,
     logging: false,
   },
 };
