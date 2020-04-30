@@ -8,10 +8,10 @@
     "build": "babel ./server -d dist",
     "start": "cross-env NODE_ENV=production node --require @babel/register ./dist/index.js",
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node server/index.js",
-    "mg": "sequelize db:migrate",
-    "mkmg": "sequelize migration:generate --name",
-    "mkmd": "sequelize model:generate --name",
-    "mku": "sequelize db:migrate:undo",
+    "mg": "sequelize-cli db:migrate",
+    "mkmg": "sequelize-cli migration:generate --name",
+    "mkmd": "sequelize-cli model:generate --name",
+    "mku": "sequelize-cli db:migrate:undo",
     "prod": "cd ./dist && yarn mg && yarn start"
   },
   "repository": {
@@ -28,6 +28,7 @@
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
+    "@babel/register": "^7.9.0",
     "@hapi/joi": "^17.1.1",
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.19.0",
@@ -38,12 +39,12 @@
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.0.3",
     "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1",
     "uuid": "^7.0.3"
   },
   "devDependencies": {
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
-    "@babel/register": "^7.9.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2"
