@@ -12,7 +12,7 @@
     "mkmg": "sequelize-cli migration:generate --name",
     "mkmd": "sequelize-cli model:generate --name",
     "mku": "sequelize-cli db:migrate:undo",
-    "prod": "cd ./dist && yarn mg && yarn start"
+    "prod": "yarn mg && yarn start"
   },
   "repository": {
     "type": "git",
