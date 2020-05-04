@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/amkayondo/tobaccoFreeApi#readme",
   "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@babel/register": "^7.9.0",
     "@hapi/joi": "^17.1.1",
     "body-parser": "^1.19.0",
@@ -40,10 +43,7 @@
     "uuid": "^7.0.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
     "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.6",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2"
